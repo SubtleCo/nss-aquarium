@@ -1,0 +1,128 @@
+main{
+    background-color: steelblue;
+    margin: 0px;
+    padding: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    margin: 5px;
+}
+
+header{
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    background-color: tomato;
+    border: 3px solid cadetblue;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 10;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    flex-grow: 0;
+}
+.contentContainer {
+    display: flex;
+}
+
+.containerLeft {
+    flex: 3 1 0;
+}
+
+.containerRight {
+    flex: 1 1 0;
+}
+
+.containerLeft__fishList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contentArticle {
+}
+
+.fishCard {
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 5px 5px darkgrey;
+    
+}
+.fishCard__name {
+    font-size: large;
+    font-weight: 800;
+    align-self: flex-start;
+}
+
+.fishCard__img {
+    height: 250px;
+    width: 250px;
+    align-self: flex-start;
+}
+
+.quoteCard {
+    background-color: lightyellow;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    text-align: right;
+}
+
+.quoteCard__text {
+    font-size: large;
+    font-weight: 800;
+    text-align: left;
+}
+.containerLeft__travelLocations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.locationCard {
+    background-color: rgb(173, 230, 208);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 5px 5px darkgrey;
+}
+
+.locationCard__landmark {
+    height: 250px;
+    width: 250px;
+
+}
+
+aside {
+    background-color: lightpink;
+    border-radius: 10px;
+
+    margin: 5px;
+}
+
+.tip {
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    background-color: lightgrey;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin: 10px 50px;
+    padding: 5px;
+}
+
