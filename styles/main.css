@@ -46,14 +46,14 @@ header{
     flex: 1 1 0;
 }
 
-.containerLeft__fishList {
+.fishList {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-
-.fishCard {
+.fish__card {
     background-color: lightblue;
     border-radius: 10px;
     padding: 10px;
@@ -61,13 +61,13 @@ header{
     box-shadow: 5px 5px darkgrey;
     
 }
-.fishCard__name {
+.fish__name {
     font-size: large;
     font-weight: 800;
     align-self: flex-start;
 }
 
-.fishCard__img {
+.fish__image {
     height: 250px;
     width: 250px;
     align-self: flex-start;
