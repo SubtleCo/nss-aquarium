@@ -3,15 +3,23 @@
  */
 
 // TODO: Import `useFish` from the data provider module
-import { useFish } from './FishDataProvider.js';
+import { boringFish, mostHolyFish, soldierFish, useFish } from './FishDataProvider.js';
 import { Fish } from './Fish.js';
 
 export const FishList = () => {
 
-    // Get a reference to the `<article class="content">` element
+// Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".content")
-    const fishes = useFish()
 
+// This is Martin's ordered list
+    const holyFish = mostHolyFish();
+    const soldiers = soldierFish();
+    const borings = boringFish();
+    const fishes = holyFish.concat(soldiers, borings);
+
+// This is the normal, undordered list
+    // const fishes = useFish()
+    
     let fishHTMLRepresentations = "";
     for (const fish of fishes) {
         fishHTMLRepresentations += Fish(fish);

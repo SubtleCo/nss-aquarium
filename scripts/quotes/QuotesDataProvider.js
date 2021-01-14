@@ -16,7 +16,7 @@ const quoteCollection = [
         author: "The lead singer of Good Charlotte",
         location: "Here and there",
         date: "05/26/2024"
-    },
+    }
 ]
 
 export const useQuote = () => {
