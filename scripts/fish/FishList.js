@@ -15,20 +15,12 @@ export const FishList = () => {
     const holyFish = mostHolyFish();
     const soldiers = soldierFish();
     const borings = boringFish();
-    const fishes = holyFish.concat(soldiers, borings);
-
-// This is the normal, undordered list
-    // const fishes = useFish()
-    
-    let fishHTMLRepresentations = "";
-    for (const fish of fishes) {
-        fishHTMLRepresentations += Fish(fish);
-    }
+    const fishes = [...holyFish, ...soldiers, ...borings];
 
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
         <article class="fishList">
-            ${fishHTMLRepresentations}
+            ${fishes.map(fish => Fish(fish)).join("")}
         </article>
     `
 }
